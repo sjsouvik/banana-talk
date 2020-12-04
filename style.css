@@ -14,12 +14,25 @@ body {
   color: #333333;
 }
 
-header {
+nav {
   text-align: center;
   background-color: var(--primary-color);
   padding: 0.5rem;
 }
 
+/* header */
+header {
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+header img {
+  width: 100%;
+}
+
+/* main */
 main {
   max-width: 600px;
   margin: 0 auto;
@@ -47,7 +60,7 @@ main {
 
 #output {
   border: 1px solid black;
-  height: 10vh;
+  height: 15vh;
   /* min-height: 10vh;
   max-height: 20vh; */
   width: 100%;
@@ -61,16 +74,26 @@ footer {
   padding: 1rem;
   background-color: var(--primary-color);
   width: 100%;
-  position: fixed;
-  bottom: 0;
 }
 
 .footer-header {
   font-weight: bold;
-  /* font-size: x-large; */
+  font-size: x-large;
+  margin-bottom: 1rem;
 }
 
 footer p {
   max-width: 600px;
   margin: auto;
+  font-size: large;
+}
+
+footer p:last-child {
+  font-size: 110%;
+  margin-top: 1rem;
+}
+
+ion-icon {
+  vertical-align: middle;
+  font-size: 120%;
 }
